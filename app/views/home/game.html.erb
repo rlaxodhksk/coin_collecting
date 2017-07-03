@@ -1,0 +1,7 @@
+<div class="dash_board">
+  <h1 id="countdown">10:0</h1>
+  <h1 id="score">Score: <%= @score %> </h1>
+</div>
+<div class="game_field">
+  <%= render partial: 'coin', locals: {left: @left, top: @top} %>
+</div>

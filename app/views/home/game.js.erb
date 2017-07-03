@@ -1,0 +1,4 @@
+$("div.game_field").html('<%= escape_javascript(render partial: 'coin', locals: {left: @left, top: @top}) %>');
+var temp = Number($('#score').text().split(': ', 3)[1])+1;
+$('#score').html("Score: "+temp);
+
